@@ -8,9 +8,9 @@ import NoMatch from './components/NoMatch'
 
 render((
   <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <Route path="/posts" component={Posts} />
-      <Route path="/posts/:postId" component={Post} />
+    <Route path="/drama/public" component={App}>
+      <Route path="/drama/public/posts" component={Posts} />
+      <Route path="/drama/public/posts/:postId" component={Post} />
       <Route path="*" component={NoMatch} />
     </Route>
   </Router>

@@ -29,5 +29,5 @@ class Posts extends Component {
 }
 
 export default connect(props => ({
-  postsFetch: '/api/posts',
+  postsFetch: 'drama/public/api/posts',
 }))(Posts)
