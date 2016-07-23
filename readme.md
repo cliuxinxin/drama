@@ -13,5 +13,3 @@ This is using an older version of [Elixir](https://laravel.com/docs/5.2/elixir),
 8、访问新建好的环境</br>
 9、母鸡如何修改route博得，导致不能访问，弄去搞搞。</br>
 
-#readme操作
-"</br>"显示换行。
