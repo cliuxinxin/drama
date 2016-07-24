@@ -1,12 +1,6 @@
 import React from 'react'
-import {
-  render
-} from 'react-dom'
-import {
-  Router,
-  Route,
-  hashHistory
-} from 'react-router'
+import { render } from 'react-dom'
+import { Router, Route, hashHistory } from 'react-router'
 import App from './components/App'
 import Posts from './components/Posts'
 import Post from './components/Post'
