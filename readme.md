@@ -13,3 +13,11 @@ This is using an older version of [Elixir](https://laravel.com/docs/5.2/elixir),
 8、访问新建好的环境</br>
 9、母鸡如何修改route博得，导致不能访问，弄去搞搞。</br>
 
+#完成列表
+
+#TODO
+1、用户模块
+2、剧集模块
+
+#更新注意
+1、php artisan jwt:generate

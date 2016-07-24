@@ -20,4 +20,11 @@ Route::get('{slug}', function() {
 
 Route::group(['prefix' => 'api'], function() {
     Route::resource('posts', 'PostsController');
+
+    Route::post('register', 'JWTController@register');
+    Route::post('login', 'JWTController@login');
+    Route::group(['middleware' => 'jwt-auth'], function () {
+        Route::post('get_user_details', 'JWTloController@get_user_details');
+    });
 });
+
