@@ -1,15 +1,23 @@
-import React, { Component } from 'react'
-import { connect, PromiseState } from 'react-refetch'
-import { Link } from 'react-router'
+import React, {
+  Component
+} from 'react'
+import {
+  connect,
+  PromiseState
+} from 'react-refetch'
+import {
+  Link
+} from 'react-router'
 import PromiseStateContainer from './PromiseStateContainer'
 
 class Posts extends Component {
 
   render() {
-    return (
-      <PromiseStateContainer
-        ps={PromiseState.all([this.props.postsFetch])}
-        onFulfillment={([posts]) => {
+    return ( < PromiseStateContainer ps = {
+        PromiseState.all([this.props.postsFetch])
+      }
+      onFulfillment = {
+        ([posts]) => {
           return (
             <ul>
               {posts.map((post) => {
@@ -21,7 +29,8 @@ class Posts extends Component {
               })}
             </ul>
           )
-        }}
+        }
+      }
       />
     )
   }
@@ -29,5 +38,5 @@ class Posts extends Component {
 }
 
 export default connect(props => ({
-  postsFetch: 'drama/public/api/posts',
+  postsFetch: `${baseurl}/api/posts`,
 }))(Posts)

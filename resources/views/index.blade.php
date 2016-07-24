@@ -8,7 +8,10 @@
 
 <body>
     <div id="app"></div>
-
+	
+	<script>
+    	var baseurl = <?php echo "'".url("/")."'" ?>;
+    </script>
     <script src="{{ asset('js/bundle.js') }}"></script>
 </body>
 </html>

@@ -1,5 +1,11 @@
-import React, { Component, PropTypes } from 'react'
-import { connect, PromiseState } from 'react-refetch'
+import React, {
+  Component,
+  PropTypes
+} from 'react'
+import {
+  connect,
+  PromiseState
+} from 'react-refetch'
 import Loading from './Loading'
 import Error from './Error'
 
@@ -23,7 +29,13 @@ class PromiseStateContainer extends Component {
   }
 
   render() {
-    const { ps, onPending, onNoResults, onRejection, onFulfillment } = this.props
+    const {
+      ps,
+      onPending,
+      onNoResults,
+      onRejection,
+      onFulfillment
+    } = this.props
 
     if (ps.pending) {
       return onPending(ps.meta)
