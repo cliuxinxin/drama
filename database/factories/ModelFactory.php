@@ -17,3 +17,16 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
         'message' => $faker->text,
     ];
 });
+
+
+$factory->define(App\Drama::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name(),
+        'url' => $faker->url(),
+        'imgurl' => $faker->url(),
+    ];
+});
+
+
+
+
