@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link, IndexLink } from 'react-router'
-import Nav from './Nav'
+import { Grid, Row } from 'react-bootstrap'
+import Navigator from './Navigator/Navigator'
 
 var $ = require('jquery');
 
@@ -9,15 +10,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav />
+        <Navigator />
 
-        <h1><IndexLink to="/">Drama</IndexLink></h1>
-
-        <ul>
-          <li><Link to="/posts">Posts</Link></li>
-        </ul>
-
-        {this.props.children}
+        <Grid>
+          <Row className="show-grid">
+            {this.props.children}
+          </Row>
+        </Grid>
       </div>
     );
   }

@@ -1,11 +1,5 @@
-import React, {
-  Component,
-  PropTypes
-} from 'react'
-import {
-  connect,
-  PromiseState
-} from 'react-refetch'
+import React, { Component, PropTypes } from 'react'
+import { connect, PromiseState } from 'react-refetch'
 import Loading from './Loading'
 import Error from './Error'
 
