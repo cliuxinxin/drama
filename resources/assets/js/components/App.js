@@ -3,7 +3,7 @@ import { Link, IndexLink } from 'react-router'
 import { Grid, Row } from 'react-bootstrap'
 import Navigator from './Navigator/Navigator'
 
-var $ = require('jquery');
+window.$ = window.jQuery = require('jquery');
 
 class App extends Component {
 
