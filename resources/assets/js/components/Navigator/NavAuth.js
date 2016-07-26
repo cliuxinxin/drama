@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import { Link } from 'react-router'
 import { Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
-import auth from '../../utils/auth/auth'
 import AuthStore from '../../stores/AuthStore'
 import AuthService from '../../services/AuthService'
 

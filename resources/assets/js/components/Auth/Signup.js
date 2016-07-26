@@ -23,12 +23,12 @@ class Signup extends Component{
 			});
 	}
 
-	handleChangeUser(newValue) {
-		this.setState({email: newValue});
+	handleChangeUser(e) {
+		this.setState({email: e.target.value});
 	}
 
-	handleChangePassword(newValue) {
-		this.setState({password: newValue});
+	handleChangePassword(e) {
+		this.setState({password: e.target.value});
 	}
 
 	render() {
@@ -50,7 +50,7 @@ class Signup extends Component{
 							邮箱
 						</Col>
 						<Col sm={10}>
-							<FormControl type="email" placeholder="" valueLink={valueLinkUser} />
+							<FormControl type="email" placeholder="" onChange={this.handleChangeUser} />
 						</Col>
 					</FormGroup>
 
@@ -59,7 +59,7 @@ class Signup extends Component{
 							密码
 						</Col>
 						<Col sm={10}>
-							<FormControl type="password" placeholder="" valueLink={valueLinkPassword} />
+							<FormControl type="password" placeholder="" onChange={this.handleChangePassword} />
 						</Col>
 					</FormGroup>
 
