@@ -1,15 +1,14 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router'
 import { Form, FormGroup, Col, FormControl, Checkbox, Button, ControlLabel } from 'react-bootstrap'
 import AuthService from '../../services/AuthService'
 
-class Signup extends React.Component{
+class Signup extends Component{
 	constructor() {
 		super()
 		this.state = {
-			user: '',
-			password: '',
-			extra: ''
+			email: '',
+			password: ''
 		};
 		this.handleChangeUser = this.handleChangeUser.bind(this);
 		this.handleChangePassword = this.handleChangePassword.bind(this);
@@ -17,7 +16,7 @@ class Signup extends React.Component{
 
 	signup(e) {
 		e.preventDefault();
-		AuthService.signup(this.state.user, this.state.password, this.state.extra)
+		AuthService.signup(this.state.email, this.state.password)
 			.catch(function(err) {
 				alert("There's an error logging in");
 				console.log("Error logging in", err);
@@ -25,7 +24,7 @@ class Signup extends React.Component{
 	}
 
 	handleChangeUser(newValue) {
-		this.setState({user: newValue});
+		this.setState({email: newValue});
 	}
 
 	handleChangePassword(newValue) {
@@ -34,13 +33,15 @@ class Signup extends React.Component{
 
 	render() {
 		var valueLinkUser = {
-			value: this.state.user,
+			value: this.state.email,
 			requestChange: this.handleChangeUser
 		};
+
 		var valueLinkPassword = {
 			value: this.state.password,
 			requestChange: this.handleChangePassword
 		};
+
 		return (
 			<Col xs={6} xsOffset={3}>
 				<Form horizontal>

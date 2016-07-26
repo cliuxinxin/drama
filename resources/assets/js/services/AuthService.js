@@ -4,14 +4,14 @@ import {LOGIN_URL, SIGNUP_URL} from '../constants/AuthConstants';
 import AuthAction from '../actions/AuthAction';
 
 class AuthService {
-	login(username, password) {
+	login(email, password) {
 		return this.handleAuth(when(request({
 			url: LOGIN_URL,
 			method: 'POST',
 			crossOrigin: true,
 			type: 'json',
 			data: {
-				username, password
+				email, password
 			}
 		})));
 	}
@@ -20,14 +20,14 @@ class AuthService {
 		AuthAction.logoutUser();
 	}
 
-	signup(username, password, extra) {
+	signup(email, password) {
 		return this.handleAuth(when(request({
 			url: SIGNUP_URL,
 			method: 'POST',
 			crossOrigin: true,
 			type: 'json',
 			data: {
-				username, password, extra
+				email, password
 			}
 		})));
 	}
@@ -35,7 +35,7 @@ class AuthService {
 	handleAuth(loginPromise) {
 		return loginPromise
 			.then(function(response) {
-				var jwt = response.id_token;
+				var jwt = response.result;
 				AuthAction.loginUser(jwt);
 				return true;
 		});

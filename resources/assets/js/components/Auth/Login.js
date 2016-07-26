@@ -7,21 +7,41 @@ class Login extends Component{
 	constructor() {
 		super()
 		this.state = {
-			user: '',
+			email: '',
 			password: ''
 		};
+		this.handleChangeUser = this.handleChangeUser.bind(this);
+		this.handleChangePassword = this.handleChangePassword.bind(this);
 	}
 
 	login(e) {
 		e.preventDefault();
-		AuthService.login(this.state.user, this.state.password)
+		AuthService.login(this.state.email, this.state.password)
 			.catch(function(err) {
 				alert("There's an error logging in");
 				console.log("Error logging in", err);
 			});
 	}
 
+	handleChangeUser(newValue) {
+		this.setState({email: newValue});
+	}
+
+	handleChangePassword(newValue) {
+		this.setState({password: newValue});
+	}
+
 	render() {
+		var valueLinkUser = {
+			value: this.state.email,
+			requestChange: this.handleChangeUser
+		};
+
+		var valueLinkPassword = {
+			value: this.state.password,
+			requestChange: this.handleChangePassword
+		};
+
 		return (
 			<Col xs={6} xsOffset={3}>
 				<Form horizontal>
@@ -30,7 +50,7 @@ class Login extends Component{
 							用户名
 						</Col>
 						<Col sm={10}>
-							<FormControl type="email" placeholder="" />
+							<FormControl type="email" placeholder="" valueLink={valueLinkUser} />
 						</Col>
 					</FormGroup>
 
@@ -39,7 +59,7 @@ class Login extends Component{
 							密码
 						</Col>
 						<Col sm={10}>
-							<FormControl type="password" placeholder="" />
+							<FormControl type="password" placeholder="" valueLink={valueLinkPassword} />
 						</Col>
 					</FormGroup>
 
