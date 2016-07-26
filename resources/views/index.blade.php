@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Laravel + React example app</title>
+    <title>Drama</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
