@@ -21,7 +21,7 @@ class JWTcontroller extends Controller
         $input['password'] = Hash::make($input['password']);
         $user = User::create($input);
         $token = JWTAuth::fromUser($user);
-        return response()->json(['result'=>$token]);
+        return response()->json(['result'=>$token, 'user'=>$user]);
     }
 
     /**
@@ -36,7 +36,8 @@ class JWTcontroller extends Controller
         if (!$token = JWTAuth::attempt($input)) {
             return response()->json(['result' => 'wrong email or password.']);
         }
-        return response()->json(['result' => $token]);
+        $user = JWTAuth::toUser($token);
+        return response()->json(['result' => $token, 'user' => $user]);
     }
 
     /**

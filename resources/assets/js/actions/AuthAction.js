@@ -3,25 +3,29 @@ import AppDispatcher from '../dispatchers/AppDispatcher.js';
 import {LOGIN_USER, LOGOUT_USER} from '../constants/AuthConstants.js';
 
 export default {
-  loginUser: (jwt) => {
-    var savedJwt = localStorage.getItem('jwt');
+  loginUser: (jwt, user) => {
+    var savedJwt = sessionStorage.getItem('jwt');
+    var savedUser = sessionStorage.getItem('user');
 
     AppDispatcher.dispatch({
       actionType: LOGIN_USER,
-      jwt: jwt
+      jwt: jwt,
+      user: user
     });
 
-    if (savedJwt !== jwt) {
+    if (savedJwt !== jwt || savedUser !== user) {
       //var nextPath = RouterContainer.get().getCurrentQuery().nextPath || '/';
-
       //RouterContainer.get().transitionTo(nextPath);
-      localStorage.setItem('jwt', jwt);
+      hashHistory.push('/');
+      sessionStorage.setItem('jwt', jwt);
+      sessionStorage.setItem('user', user);
     }
   },
   
   logoutUser: () => {
     hashHistory.push('/login');
-    localStorage.removeItem('jwt');
+    sessionStorage.removeItem('jwt');
+    sessionStorage.removeItem('user');
     AppDispatcher.dispatch({
       actionType: LOGOUT_USER
     });

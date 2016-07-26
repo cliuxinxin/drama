@@ -36,7 +36,8 @@ class AuthService {
 		return loginPromise
 			.then(function(response) {
 				var jwt = response.result;
-				AuthAction.loginUser(jwt);
+				let user = response.user.email;
+				AuthAction.loginUser(jwt, user);
 				return true;
 		});
 	}

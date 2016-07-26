@@ -14,7 +14,8 @@ class NavAuth extends Component {
 
 	_getLoginState() {
 		return {
-			userLoggedIn: AuthStore.isLoggedIn()
+			userLoggedIn: AuthStore.isLoggedIn(),
+			user: AuthStore.user
 		};
 	}
 
@@ -40,7 +41,7 @@ class NavAuth extends Component {
 	    return (
 	    	<Nav>
 	    		{this.state.userLoggedIn ? (
-	    			<NavDropdown eventKey={3} title="我的抓马" id="basic-nav-dropdown">
+	    			<NavDropdown eventKey={3} title={this.state.user || ""} id="basic-nav-dropdown">
 						<MenuItem eventKey={3.1}>账户管理</MenuItem>
 						<MenuItem eventKey={3.2}>安全设置</MenuItem>
 						<MenuItem divider />
