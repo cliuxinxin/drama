@@ -30,6 +30,8 @@ Route::group(['prefix' => 'api'], function() {
 
     //Drama
     Route::get('drama','DramaController@index');
+    Route::get('test','DramaController@test');
+    Route::get('drama/get','DramaController@get');
 
 });
 

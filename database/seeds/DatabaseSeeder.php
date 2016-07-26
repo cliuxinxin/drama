@@ -14,6 +14,5 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         factory(Post::class, 5)->create();
-        factory(Drama::class, 5)->create();
     }
 }

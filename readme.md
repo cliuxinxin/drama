@@ -21,6 +21,12 @@ This is using an older version of [Elixir](https://laravel.com/docs/5.2/elixir),
 
 #更新注意
 1、php artisan jwt:generate
+2、注意看route，里面有getshow的地址，运行一下，就会把所有数据抓下来。
 
 #备注
 1. npm加了jquery和bootstrap，记得要重新install一下。
+
+#名词
+aired from 首播日期
+on hiatus 停播
+return 回归
