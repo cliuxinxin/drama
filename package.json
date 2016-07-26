@@ -7,14 +7,19 @@
     "bootstrap": "^3.3.6",
     "bootstrap-sass": "^3.0.0",
     "classnames": "^2.2.3",
+    "flux": "^2.1.1",
     "jquery": "^2.*",
+    "jwt-decode": "^2.1.0",
     "laravel-elixir": "^2.2.1",
     "laravel-elixir-livereload": "0.0.3",
     "react": "^15.2.1",
     "react-bootstrap": "^0.30.0-rc.2",
     "react-dom": "^15.2.1",
+    "react-mixin": "^3.0.5",
     "react-refetch": "^0.8.0",
     "react-router": "^2.4.0",
-    "react-router-bootstrap": "^0.23.0"
+    "react-router-bootstrap": "^0.23.0",
+    "reqwest": "^2.0.5",
+    "when": "^3.7.7"
   }
 }
