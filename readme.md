@@ -14,19 +14,22 @@ This is using an older version of [Elixir](https://laravel.com/docs/5.2/elixir),
 9、母鸡如何修改route博得，导致不能访问，弄去搞搞。</br>
 
 #完成列表
+1、用户后台</br>
+2、剧集信息抓取</br>
+3、剧集展示</br>
 
 #TODO
-1、用户模块
-2、剧集模块
+1、用户模块</br>
+2、剧集模块</br>
 
 #更新注意
-1、php artisan jwt:generate
-2、注意看route，里面有getshow的地址，运行一下，就会把所有数据抓下来。
+1、php artisan jwt:generate</br>
+2、注意看route，里面有getshow的地址，运行一下，就会把所有数据抓下来。</br>
 
 #备注
-1. npm加了jquery和bootstrap，记得要重新install一下。
+1. npm加了jquery和bootstrap，记得要重新install一下。</br>
 
 #名词
-aired from 首播日期
-on hiatus 停播
-return 回归
+aired from 首播日期</br>
+on hiatus 停播</br>
+return 回归</br>
