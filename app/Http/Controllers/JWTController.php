@@ -19,8 +19,9 @@ class JWTcontroller extends Controller
     {
         $input = $request->all();
         $input['password'] = Hash::make($input['password']);
-        User::create($input);
-        return response()->json(['result'=>true]);
+        $user = User::create($input);
+        $token = JWTAuth::fromUser($user);
+        return response()->json(['result'=>$token]);
     }
 
     /**
