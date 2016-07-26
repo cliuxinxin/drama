@@ -32,16 +32,6 @@ class Login extends Component{
 	}
 
 	render() {
-		var valueLinkUser = {
-			value: this.state.email,
-			requestChange: this.handleChangeUser
-		};
-
-		var valueLinkPassword = {
-			value: this.state.password,
-			requestChange: this.handleChangePassword
-		};
-
 		return (
 			<Col xs={6} xsOffset={3}>
 				<Form horizontal>
