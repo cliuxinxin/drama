@@ -14,6 +14,9 @@ This is using an older version of [Elixir](https://laravel.com/docs/5.2/elixir),
 9、母鸡如何修改route博得，导致不能访问，弄去搞搞。</br>
 
 #完成列表
+1、用户后台</br>
+2、剧集信息抓取</br>
+3、剧集展示</br>
 
 #TODO
 1、用户模块</br>
