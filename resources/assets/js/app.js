@@ -15,6 +15,7 @@ render((
     	<Route path="/login" component={Login} />
       	<Route path="/signup" component={Signup} />
       	<Route path="/dramas" component={Dramas} />
+        <Route path="/dramas/:page" component={Dramas} />
 		<Route path="/posts" component={Posts} />
 		<Route path="/posts/:postId" component={Post} />
 		<Route path="*" component={NoMatch} />

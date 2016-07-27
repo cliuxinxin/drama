@@ -6,8 +6,9 @@ class DramaStore extends BaseStore {
 	constructor() {
 	    super();
 	    this.subscribe(() => this._registerToActions.bind(this));
-	    this._totalPages = 1;
+	    this._totalPages = 0;
 	    this._dramas = null;
+	    this._loading = false;
 	}
 
 	_registerToActions(action) {
@@ -28,6 +29,10 @@ class DramaStore extends BaseStore {
 
 	get dramas() {
 	    return this._dramas;
+	}
+
+	get loading() {
+		return this._loading;
 	}
 }
 
