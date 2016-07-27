@@ -52,7 +52,7 @@ class Dramas extends Component {
 		hashHistory.push('/dramas/' + requestPage);
 		this.setState({page: requestPage}, () => {
 			this.getDramas();
-			$('html,body').animate({scrollTop:0},0); 
+			$('html,body').animate({scrollTop:0}, 0); 
 		});
 	};
 
