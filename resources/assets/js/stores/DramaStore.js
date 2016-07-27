@@ -5,7 +5,8 @@ import {GET_DRAMAS} from '../constants/AuthConstants.js';
 class DramaStore extends BaseStore {
 	constructor() {
 	    super();
-	    this.subscribe(() => this._registerToActions.bind(this))
+	    this.subscribe(() => this._registerToActions.bind(this));
+	    this._totalPages = 1;
 	    this._dramas = null;
 	}
 
@@ -13,11 +14,16 @@ class DramaStore extends BaseStore {
 	    switch(action.actionType) {
 	      case GET_DRAMAS:
 	        this._dramas = action.dramas;
+	        this._totalPages = action.totalPages;
 	        this.emitChange();
 	        break;
 	      default:
 	        break;
 	    };
+	}
+
+	get totalPages() {
+		return this._totalPages;
 	}
 
 	get dramas() {
