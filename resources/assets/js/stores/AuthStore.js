@@ -7,8 +7,8 @@ class AuthStore extends BaseStore {
   constructor() {
     super();
     this.subscribe(() => this._registerToActions.bind(this))
-    this._user = sessionStorage.getItem('user');
-    this._jwt = sessionStorage.getItem('jwt');;
+    this._user = localStorage.getItem('user');
+    this._jwt = localStorage.getItem('jwt');;
   }
 
   _registerToActions(action) {
