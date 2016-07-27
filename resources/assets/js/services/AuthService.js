@@ -35,7 +35,7 @@ class AuthService {
 	handleAuth(loginPromise) {
 		return loginPromise
 			.then(function(response) {
-				var jwt = response.result;
+				let jwt = response.result;
 				let user = response.user.email;
 				AuthAction.loginUser(jwt, user);
 				return true;
