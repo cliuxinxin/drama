@@ -34,6 +34,7 @@ class DramaRepository
         foreach ($data as $drama) {
             $data = [
                 'name' => $drama['name'],
+                'tvmazeid' => $drama['id'],
                 'url' => $drama['url'],
                 'imgurl' => is_null($drama['image']['medium'])?"xxxx":$drama['image']['medium'],
                 'type' => $drama['type'],

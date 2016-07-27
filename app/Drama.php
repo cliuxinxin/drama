@@ -12,6 +12,6 @@ class Drama extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'url', 'imgurl','cnname','status','airedfrom','type','imdb','summary'
+        'name', 'url', 'imgurl','cnname','status','airedfrom','type','imdb','summary','tvmazeid'
     ];
 }
