@@ -27,7 +27,7 @@ class DramaController extends Controller
      */
     public function index()
     {
-        return Drama::paginate(10);
+        return Drama::paginate(9);
     }
 
     /**
