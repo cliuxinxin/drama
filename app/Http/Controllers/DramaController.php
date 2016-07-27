@@ -45,6 +45,27 @@ class DramaController extends Controller
         return 'ok';
     }
 
+    /**
+     * User unfollow the drama
+     *
+     * @param $drama
+     * @return string
+     */
+    public function unFollow($drama)
+    {
+        $user = JWTAuth::parseToken()->authenticate();
+
+        $user->dramas()->detach($drama);
+
+        return 'ok';
+    }
+
+
+    /**
+     * User's drama
+     * 
+     * @return mixed
+     */
     public function userDramas()
     {
         $user = JWTAuth::parseToken()->authenticate();
