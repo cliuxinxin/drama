@@ -7,14 +7,18 @@ use App\Repositories\DramaRepository;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Auth;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class DramaController extends Controller
 {
     protected $dramas;
 
+
     public function __construct(DramaRepository $dramas)
     {
         $this->dramas = $dramas;
+
     }
     /**
      * Get All Drama list
@@ -24,6 +28,49 @@ class DramaController extends Controller
     public function index()
     {
         return Drama::paginate(10);
+    }
+
+    /**
+     * User follow a drama
+     *
+     * @param $drama
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function follow($drama)
+    {
+        $user = JWTAuth::parseToken()->authenticate();
+
+        $user->dramas()->sync([$drama], false);
+
+        return 'ok';
+    }
+
+    /**
+     * User unfollow the drama
+     *
+     * @param $drama
+     * @return string
+     */
+    public function unFollow($drama)
+    {
+        $user = JWTAuth::parseToken()->authenticate();
+
+        $user->dramas()->detach($drama);
+
+        return 'ok';
+    }
+
+
+    /**
+     * User's drama
+     * 
+     * @return mixed
+     */
+    public function userDramas()
+    {
+        $user = JWTAuth::parseToken()->authenticate();
+
+        return $user->dramas;
     }
 
     /**
