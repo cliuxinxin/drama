@@ -3,14 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Drama;
+use App\Repositories\DramaRepository;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
-use Symfony\Component\DomCrawler\Crawler;
-use Goutte;
 use App\Http\Requests;
 
 class DramaController extends Controller
 {
+    protected $dramas;
+
+    public function __construct(DramaRepository $dramas)
+    {
+        $this->dramas = $dramas;
+    }
     /**
      * Get All Drama list
      *
@@ -28,52 +33,14 @@ class DramaController extends Controller
      */
     public function get()
     {
-        for($i=0;$i<78;$i++){
-            $this->getOnePageDramas($i);
-        }
+        $this->dramas->getAll();
 
         return 'OK';
     }
 
     public function test()
     {
-
-
         return 'OK';
     }
 
-    
-
-    /**
-     * Get TVmaze info by api
-     *
-     * @return mixed
-     */
-    private function getTVmazeInfo($url)
-    {
-        $client = new Client();
-        $res = $client->get($url);
-        $data = json_decode($res->getBody()->getContents(), true);
-        return $data;
-    }
-
-    /**
-     * Get one Page Dramas
-     */
-    private function getOnePageDramas($page)
-    {
-        $url = 'http://api.tvmaze.com/shows?page='.$page;
-        $data = $this->getTVmazeInfo($url);
-        foreach ($data as $drama) {
-            $data = [
-                'name' => $drama['name'],
-                'url' => $drama['url'],
-                'imgurl' => is_null($drama['image']['medium'])?"xxxx":$drama['image']['medium'],
-                'type' => $drama['type'],
-                'summary' => $drama['summary'],
-                'imdb' => is_null($drama['externals']['imdb'])?"xxxx":$drama['externals']['imdb']
-            ];
-            Drama::FirstOrCreate($data);
-        }
-    }
 }
