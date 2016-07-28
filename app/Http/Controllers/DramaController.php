@@ -22,15 +22,9 @@ class DramaController extends Controller
 
         $episodes = $drama->episodes;
 
-        $is_follow = false;
+        $drama = $this->dramaIsFollowCheck($drama);
 
-        if($token = JWTAuth::getToken()){
-            $user = JWTAuth::parseToken()->authenticate();
-            if($drama->isFollowBy($user)){
-                $is_follow = true;
-            }
-        }
-        $drama['is_follow'] = $is_follow;
+
 
         return [$drama,$episodes];
     }
@@ -115,6 +109,24 @@ class DramaController extends Controller
 
 
         return $dramaepisodes;
+    }
+
+    /**
+     * @param $drama
+     * @return mixed
+     */
+    private function dramaIsFollowCheck($drama)
+    {
+        $is_follow = false;
+
+        if ($token = JWTAuth::getToken()) {
+            $user = JWTAuth::parseToken()->authenticate();
+            if ($drama->isFollowBy($user)) {
+                $is_follow = true;
+            }
+        }
+        $drama['is_follow'] = $is_follow;
+        return $drama;
     }
 
 }

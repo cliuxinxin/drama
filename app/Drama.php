@@ -13,9 +13,11 @@ class Drama extends Model
         if(!$user->dramas->first()){
             return false;
         }
+
         if ($user->dramas->contains('id',$this['id'])){
             return true;
         }
+
         return false;
     }
 
