@@ -32,7 +32,7 @@ class DramaController extends Controller
         }
         $drama['is_follow'] = $is_follow;
 
-        return $drama;
+        return [$drama,$episodes];
     }
     /**
      * Get All Drama list

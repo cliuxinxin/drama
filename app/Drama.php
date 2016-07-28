@@ -10,6 +10,9 @@ class Drama extends Model
 {
     public function isFollowBy($user)
     {
+        if(!$user->dramas->first()){
+            return false;
+        }
         if ($user->dramas->contains('id',$this['id'])){
             return true;
         }
