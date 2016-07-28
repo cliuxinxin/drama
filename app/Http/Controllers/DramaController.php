@@ -6,15 +6,24 @@ use App\Drama;
 use App\Episode;
 use App\Repositories\DramaRepository;
 use App\Repositories\EpisodeRepository;
-use Carbon\Carbon;
-use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use Illuminate\Support\Facades\Auth;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
 class DramaController extends Controller
 {
+
+    public function show($dramaid)
+    {
+
+        $drama = Drama::find($dramaid);
+
+        $drama->episodeUpdate();
+
+        $episodes = $drama->episodes;
+
+        return [$drama,$episodes];
+    }
     /**
      * Get All Drama list
      *

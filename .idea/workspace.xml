@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58293af8-6c5e-454e-b540-6ea15d5fad04" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Repositories/EpisodeRepository.php" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\drama\npm-debug.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Drama.php" afterPath="$PROJECT_DIR$/app/Drama.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
     </list>
     <ignored path="drama.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,12 +29,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Drama.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Drama.php">
+      <file leaf-file-name="EpisodeController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EpisodeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65473145">
-              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-              <folding />
+            <state vertical-scroll-proportion="1.1508951">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,16 +68,17 @@
         <option value="$PROJECT_DIR$/database/migrations/2016_07_25_031233_add_some_info_to_dramas_table.php" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/JWTController.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Repositories/DramaRepository.php" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/database/migrations/2016_07_28_021201_create_episodes_table.php" />
         <option value="$PROJECT_DIR$/app/Episode.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/EpisodeRepository.php" />
         <option value="$PROJECT_DIR$/app/Drama.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/EpisodeController.php" />
       </list>
     </option>
   </component>
@@ -463,6 +462,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -529,7 +550,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -562,18 +583,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5904059">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6905371">
@@ -799,14 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.795569">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -858,30 +864,337 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_07_28_021201_create_episodes_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39130434">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.49872124">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="36" />
           <folding>
-            <marker date="1469610160063" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1469610160063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469610160063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469610160063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469610160063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469610160063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469610160063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469610160063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469610160063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469610160063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469610160063" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469676617823" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Episode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34526855">
+          <caret line="9" column="77" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="77" />
+          <folding>
+            <marker date="1469676627624" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469676627624" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="15.524297">
+          <caret line="949" column="31" selection-start-line="949" selection-start-column="31" selection-end-line="949" selection-end-column="31" />
+          <folding>
+            <marker date="1469408166247" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" The items contained in the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Create a new collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Create a new collection instance if the value isn't one already. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get all of the items in the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the average value of a given key. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Alias for the &quot;avg&quot; method. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the median of a given key. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the mode of a given key. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Collapse the collection of items into a single array. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Determine if an item exists in the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the items in the collection that are not present in the given items. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the items in the collection whose keys are not present in the given items. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Execute a callback over each item. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Create a new collection consisting of every n-th element. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get all items except for those with the specified keys. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Run a filter over each of the items. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Filter items by the given key value pair. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Filter items by the given key value pair using loose comparison. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Filter items by the given key value pair. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Filter items by the given key value pair using loose comparison. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the first item from the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get a flattened array of the items in the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Flip the items in the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Remove an item from the collection by key. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get an item from the collection by key. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Group an associative array by a field or using a callback. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Key an associative array by a field or using a callback. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Determine if an item exists in the collection by key. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Concatenate values of a given key as a string. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Intersect the collection with the given items. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Determine if the collection is empty or not. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Determine if the given value is callable, but not a string. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the keys of the collection items. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the last item from the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the values of a given key. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Alias for the &quot;pluck&quot; method. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Run a map over each of the items. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Map a collection and flatten the result by a single level. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the max value of a given key. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Merge the collection with the given items. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Create a collection by using this collection for keys and another for its values. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Union the collection with the given items. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the min value of a given key. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the items with the specified keys. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" &quot;Paginate&quot; the collection by slicing it into a smaller collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Pass the collection to the given callback and return the result. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get and remove the last item from the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Push an item onto the beginning of the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Push an item onto the end of the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get and remove an item from the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Put an item in the collection by key. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get one or more items randomly from the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Reduce the collection to a single value. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Create a collection of all elements that do not pass a given truth test. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Reverse items order. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Search the collection for a given value and return the corresponding key if successful. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get and remove the first item from the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Shuffle the items in the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Slice the underlying collection array. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Chunk the underlying collection array. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Sort through each item with a callback. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Sort the collection using the given callback. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Sort the collection in descending order using the given callback. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Splice a portion of the underlying collection array. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the sum of the given values. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Take the first or last {$limit} items. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Transform each item in the collection using a callback. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Return only unique items from the collection array. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Reset the keys on the underlying array. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get a value retrieving callback. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Zip the collection together with one or more arrays. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the collection of items as a plain array. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Convert the object into something JSON serializable. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the collection of items as JSON. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get an iterator for the items. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get a CachingIterator instance. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Count the number of items in the collection. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Determine if an item exists at an offset. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get an item at a given offset. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Set the item at a given offset. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Unset the item at a given offset. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Convert the collection to its string representation. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Results array of items from Collection or Arrayable. ..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65473145">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding>
+            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder=" Bootstrap any application services. ..." />
+            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder=" Register any application services. ..." />
+            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/DramaRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1943734">
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding>
+            <marker date="1469669239574" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1469669239574" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder=" Get all dramas info. ..." />
+            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder=" Get one Page Dramas ..." />
+            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder=" Get TVmaze info by api ..." />
+            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36061382">
-          <caret line="2862" column="20" selection-start-line="2862" selection-start-column="20" selection-end-line="2862" selection-end-column="20" />
+        <state vertical-scroll-proportion="-8.323529">
+          <caret line="135" column="7" selection-start-line="135" selection-start-column="7" selection-end-line="135" selection-end-column="7" />
           <folding>
             <marker date="1469408161640" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1469408161640" expanded="true" signature="-1:-1" placeholder="{...}" />
@@ -1477,359 +1790,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_07_28_021201_create_episodes_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Drama.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49872124">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="36" />
+        <state vertical-scroll-proportion="-1.1892583">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding>
-            <marker date="1469676617823" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
-            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
-            <marker date="1469676617823" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Episode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34526855">
-          <caret line="9" column="77" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="77" />
-          <folding>
-            <marker date="1469676627624" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469676627624" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.524297">
-          <caret line="949" column="31" selection-start-line="949" selection-start-column="31" selection-end-line="949" selection-end-column="31" />
-          <folding>
-            <marker date="1469408166247" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" The items contained in the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Create a new collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Create a new collection instance if the value isn't one already. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get all of the items in the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the average value of a given key. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Alias for the &quot;avg&quot; method. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the median of a given key. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the mode of a given key. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Collapse the collection of items into a single array. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Determine if an item exists in the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the items in the collection that are not present in the given items. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the items in the collection whose keys are not present in the given items. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Execute a callback over each item. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Create a new collection consisting of every n-th element. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get all items except for those with the specified keys. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Run a filter over each of the items. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Filter items by the given key value pair. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Filter items by the given key value pair using loose comparison. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Filter items by the given key value pair. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Filter items by the given key value pair using loose comparison. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the first item from the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get a flattened array of the items in the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Flip the items in the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Remove an item from the collection by key. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get an item from the collection by key. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Group an associative array by a field or using a callback. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Key an associative array by a field or using a callback. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Determine if an item exists in the collection by key. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Concatenate values of a given key as a string. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Intersect the collection with the given items. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Determine if the collection is empty or not. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Determine if the given value is callable, but not a string. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the keys of the collection items. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the last item from the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the values of a given key. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Alias for the &quot;pluck&quot; method. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Run a map over each of the items. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Map a collection and flatten the result by a single level. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the max value of a given key. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Merge the collection with the given items. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Create a collection by using this collection for keys and another for its values. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Union the collection with the given items. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the min value of a given key. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the items with the specified keys. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" &quot;Paginate&quot; the collection by slicing it into a smaller collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Pass the collection to the given callback and return the result. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get and remove the last item from the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Push an item onto the beginning of the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Push an item onto the end of the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get and remove an item from the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Put an item in the collection by key. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get one or more items randomly from the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Reduce the collection to a single value. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Create a collection of all elements that do not pass a given truth test. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Reverse items order. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Search the collection for a given value and return the corresponding key if successful. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get and remove the first item from the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Shuffle the items in the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Slice the underlying collection array. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Chunk the underlying collection array. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Sort through each item with a callback. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Sort the collection using the given callback. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Sort the collection in descending order using the given callback. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Splice a portion of the underlying collection array. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the sum of the given values. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Take the first or last {$limit} items. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Transform each item in the collection using a callback. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Return only unique items from the collection array. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Reset the keys on the underlying array. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get a value retrieving callback. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Zip the collection together with one or more arrays. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the collection of items as a plain array. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Convert the object into something JSON serializable. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get the collection of items as JSON. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get an iterator for the items. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get a CachingIterator instance. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Count the number of items in the collection. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Determine if an item exists at an offset. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Get an item at a given offset. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Set the item at a given offset. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Unset the item at a given offset. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Convert the collection to its string representation. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder=" Results array of items from Collection or Arrayable. ..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408166247" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65473145">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding>
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder=" Bootstrap any application services. ..." />
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder=" Register any application services. ..." />
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/DramaRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1943734">
-          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-          <folding>
-            <marker date="1469669239574" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1469669239574" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder=" Get all dramas info. ..." />
-            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder=" Get one Page Dramas ..." />
-            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder=" Get TVmaze info by api ..." />
-            <marker date="1469669239574" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DramaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4910486">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <marker date="1469689884302" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder=" Get All Drama list ..." />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder=" User follow a drama ..." />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder=" User unfollow the drama ..." />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder=" User's drama ..." />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder=" Get All Shows ..." />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469689884302" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469692147871" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder=" The attributes that are mass assignable. ..." />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder=" The drama is updated ..." />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder=" Drama have many episodes ..." />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder=" Update Drama episode info. ..." />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/EpisodeRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47314578">
+        <state vertical-scroll-proportion="-0.4219949">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="36" />
           <folding>
             <marker date="1469691486549" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
@@ -1857,11 +1844,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Drama.php">
+    <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65473145">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-          <folding />
+        <state vertical-scroll-proportion="0.8465473">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+          <folding>
+            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder=" The attributes that are mass assignable. ..." />
+            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder=" The attributes that should be hidden for arrays. ..." />
+            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder=" User has many dramas ..." />
+            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54092073">
+          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+          <folding>
+            <marker date="1469693540130" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DramaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3836317">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder=" Get All Drama list ..." />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder=" User follow a drama ..." />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder=" User unfollow the drama ..." />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder=" User's drama ..." />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder=" Get All Shows ..." />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EpisodeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1508951">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
