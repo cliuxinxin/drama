@@ -8,6 +8,24 @@ use Illuminate\Database\Eloquent\Model;
 
 class Drama extends Model
 {
+    public function isFollowBy($user)
+    {
+        if ($user->dramas->contains('id',$this['id'])){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * The drama belongs to many users.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function users()
+    {
+        return $this->belongsToMany('App\User');
+
+    }
     /**
      * The attributes that are mass assignable.
      *

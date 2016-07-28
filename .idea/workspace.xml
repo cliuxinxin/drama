@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58293af8-6c5e-454e-b540-6ea15d5fad04" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Drama.php" afterPath="$PROJECT_DIR$/app/Drama.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drama.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,14 +31,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EpisodeController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EpisodeController.php">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1508951">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.8414322">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,11 +74,11 @@
         <option value="$PROJECT_DIR$/app/Episode.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Repositories/EpisodeRepository.php" />
-        <option value="$PROJECT_DIR$/app/Drama.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EpisodeController.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/Drama.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -588,20 +588,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6905371">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5383632">
@@ -662,20 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.65217394">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/Facades/JWTAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23363546">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/JWTAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -795,6 +767,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5548842">
           <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -839,6 +812,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0664651">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1790,33 +1764,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Drama.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EpisodeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1892583">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state vertical-scroll-proportion="-0.2672634">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
           <folding>
-            <marker date="1469692147871" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder=" The attributes that are mass assignable. ..." />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder=" The drama is updated ..." />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder=" Drama have many episodes ..." />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder=" Update Drama episode info. ..." />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469692147871" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder=" User seen a drama ..." />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder=" User unseen the episode ..." />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4629156">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <marker date="1469694698779" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469694698779" expanded="true" signature="-1:-1" placeholder=" The attributes that are mass assignable. ..." />
+            <marker date="1469694698779" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469694698779" expanded="true" signature="-1:-1" placeholder=" The attributes that should be hidden for arrays. ..." />
+            <marker date="1469694698779" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469694698779" expanded="true" signature="-1:-1" placeholder=" User has many dramas ..." />
+            <marker date="1469694698779" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469694698779" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/actions/AuthAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <marker date="1469610109927" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469610109927" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469610109927" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469610109927" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469610109927" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1469610109927" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469610109927" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Auth/AuthenticatedComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4809348">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469580851969" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/EpisodeRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4219949">
+        <state vertical-scroll-proportion="0.03836317">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="36" />
           <folding>
             <marker date="1469691486549" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
@@ -1844,74 +1863,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
+    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/Facades/JWTAuth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8465473">
-          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.65217394">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding>
-            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder=" The attributes that are mass assignable. ..." />
-            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder=" The attributes that should be hidden for arrays. ..." />
-            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder=" User has many dramas ..." />
-            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469693411668" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408167966" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469408167966" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408167966" expanded="true" signature="-1:-1" placeholder=" Get the registered name of the component. ..." />
+            <marker date="1469408167966" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/JWTAuth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54092073">
-          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.33248082">
+          <caret line="153" column="20" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="20" />
           <folding>
-            <marker date="1469693540130" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693540130" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" @var \Tymon\JWTAuth\JWTManager ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" @var \Tymon\JWTAuth\Providers\User\UserInterface ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" @var \Tymon\JWTAuth\Providers\Auth\AuthInterface ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" @var \Illuminate\Http\Request ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" @var string ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" @var \Tymon\JWTAuth\Token ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" @param \Tymon\JWTAuth\JWTManager                   $manager ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Find a user using the user identifier in the subject claim. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Generate a token using the user identifier as the subject claim. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Attempt to authenticate the user and return the token. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Authenticate a user via a token. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Refresh an expired token. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Invalidate a token (add it to the blacklist). ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Get the token. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Get the raw Payload instance. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Parse the token from the request. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Parse token from the authorization header. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Create a Payload instance. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Set the identifier. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Get the identifier. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Set the token. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Ensure that a token is available. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Set the request instance. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Get the JWTManager instance. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder=" Magically call the JWT Manager. ..." />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469408168016" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Drama.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3836317">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+          <folding>
+            <marker date="1469698403472" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder=" The drama belongs to many users. ..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder=" The attributes that are mass assignable. ..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder=" The drama is updated ..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder=" Drama have many episodes ..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder=" Update Drama episode info. ..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469698403472" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DramaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3836317">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7877238">
+          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
           <folding>
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder=" Get All Drama list ..." />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder=" User follow a drama ..." />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder=" User unfollow the drama ..." />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder=" User's drama ..." />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder=" Get All Shows ..." />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469693838263" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698516358" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder=" Get All Drama list ..." />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder=" User follow a drama ..." />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder=" User unfollow the drama ..." />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder=" User's drama ..." />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder=" Get All Shows ..." />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469698516358" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EpisodeController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1508951">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.8414322">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

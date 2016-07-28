@@ -22,7 +22,17 @@ class DramaController extends Controller
 
         $episodes = $drama->episodes;
 
-        return [$drama,$episodes];
+        $is_follow = false;
+
+        if($token = JWTAuth::getToken()){
+            $user = JWTAuth::parseToken()->authenticate();
+            if($drama->isFollowBy($user)){
+                $is_follow = true;
+            }
+        }
+        $drama['is_follow'] = $is_follow;
+
+        return $drama;
     }
     /**
      * Get All Drama list

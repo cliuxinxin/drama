@@ -37,6 +37,6 @@ class User extends Authenticatable
 
     public function episodes()
     {
-        return $this->belongsToMany('App\Episodes');
+        return $this->belongsToMany('App\Episode');
     }
 }
