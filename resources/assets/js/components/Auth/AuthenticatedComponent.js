@@ -4,9 +4,12 @@ import AuthStore from '../../stores/AuthStore';
 export default (ComposedComponent) => {
   return class AuthenticatedComponent extends Component {
 
-    static willTransitionTo(transition) {
+    static requireAuth(nextState, replace) {
       if (!AuthStore.isLoggedIn()) {
-        transition.redirect('/login', {}, {'nextPath' : transition.path});
+        replace({
+          pathname: '/login',
+          state: { nextPathname: nextState.location.pathname }
+        })
       }
     }
 
@@ -19,7 +22,8 @@ export default (ComposedComponent) => {
       return {
         userLoggedIn: AuthStore.isLoggedIn(),
         user: AuthStore.user,
-        jwt: AuthStore.jwt
+        jwt: AuthStore.jwt,
+        uid: AuthStore.uid
       };
     }
 
@@ -42,6 +46,7 @@ export default (ComposedComponent) => {
         {...this.props}
         user={this.state.user}
         jwt={this.state.jwt}
+        uid={this.state.uid}
         userLoggedIn={this.state.userLoggedIn} />
       );
     }
