@@ -12,14 +12,6 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 
 class DramaController extends Controller
 {
-    protected $dramas;
-
-
-    public function __construct(DramaRepository $dramas)
-    {
-        $this->dramas = $dramas;
-
-    }
     /**
      * Get All Drama list
      *
@@ -80,7 +72,9 @@ class DramaController extends Controller
      */
     public function get()
     {
-        $this->dramas->getAll();
+        $dramas = new DramaRepository();
+
+        $dramas->getAll();
 
         return 'OK';
     }
