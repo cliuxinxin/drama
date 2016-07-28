@@ -21,6 +21,7 @@ This is using an older version of [Elixir](https://laravel.com/docs/5.2/elixir),
 #TODO
 1、用户模块</br>
 2、剧集模块</br>
+3、剧集模块逻辑，返回更新到第几季第几机了，马上要放第几集，哪天放</br>
 
 #更新注意
 1、php artisan jwt:generate</br>

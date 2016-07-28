@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Drama;
+use App\Episode;
 use App\Repositories\DramaRepository;
+use App\Repositories\EpisodeRepository;
+use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use App\Http\Requests;
@@ -19,7 +22,13 @@ class DramaController extends Controller
      */
     public function index()
     {
-        return Drama::paginate(9);
+        $dramas = Drama::paginate(9);
+
+        foreach($dramas as $drama){
+            $drama->episodeUpdate();
+        }
+
+        return $dramas;
     }
 
     /**
@@ -81,7 +90,12 @@ class DramaController extends Controller
 
     public function test()
     {
-        return 'OK';
+        $dramas = new EpisodeRepository();
+
+        $dramaepisodes = $dramas->getAiredEpisodes(118);
+
+
+        return $dramaepisodes;
     }
 
 }
