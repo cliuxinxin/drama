@@ -31,7 +31,6 @@ Route::group(['prefix' => 'api'], function() {
     //Drama
     Route::get('drama/get','DramaController@get');
     Route::get('drama','DramaController@index');
-    Route::get('drama/{dramaid}','DramaController@show');
 
     Route::group(['middleware' => 'jwt.auth'],function(){
         Route::get('drama/follow/{drama}','DramaController@follow');
@@ -42,6 +41,8 @@ Route::group(['prefix' => 'api'], function() {
     });
 
     Route::get('test','DramaController@test');
+    Route::get('drama/{dramaid}','DramaController@show');
+
 
 
 

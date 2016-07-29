@@ -56,7 +56,7 @@ class Drama extends Model
      */
     public function isNeedUpdate()
     {
-        if (is_null($this->getAttribute('episode_update_date'))){
+        if (is_null($this['episode_update_date'])){
             return true;
         }
         if (Carbon::now()->diffInDays(new Carbon($this['episode_update_date'])) > 3){

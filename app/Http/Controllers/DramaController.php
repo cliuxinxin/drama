@@ -12,6 +12,16 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 
 class DramaController extends Controller
 {
+    //Get the login user
+    private $user;
+
+    //Auth the user
+    public function __construct()
+    {
+        if ($token = JWTAuth::getToken()) {
+            $this->user = JWTAuth::parseToken()->authenticate();
+        }
+    }
 
     /**
      * Get a drama detail and its episodes
@@ -21,7 +31,6 @@ class DramaController extends Controller
      */
     public function show($dramaid)
     {
-
         $drama = Drama::find($dramaid);
 
         $drama->episodeUpdate();
@@ -29,8 +38,6 @@ class DramaController extends Controller
         $episodes = $drama->episodes;
 
         $drama = $this->dramaIsFollowCheck($drama);
-
-
 
         return [$drama,$episodes];
     }
