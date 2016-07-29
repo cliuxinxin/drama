@@ -5,10 +5,24 @@ namespace App;
 use App\Repositories\EpisodeRepository;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class Drama extends Model
 {
 
+    protected $appends = array('user_follow');
+
+    public function getUserFollowAttribute()
+    {
+        if ($token = JWTAuth::getToken()) {
+            $user = JWTAuth::parseToken()->authenticate();
+            if ($this->isFollowBy($user)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
     /**
      * Is Drama follow by given user
      *

@@ -7,7 +7,6 @@
     <list default="true" id="58293af8-6c5e-454e-b540-6ea15d5fad04" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Drama.php" afterPath="$PROJECT_DIR$/app/Drama.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
     </list>
     <ignored path="drama.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <file leaf-file-name="DramaController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DramaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5767263">
-              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.65473145">
+              <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -74,9 +73,9 @@
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Repositories/EpisodeRepository.php" />
         <option value="$PROJECT_DIR$/app/Episode.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Drama.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -833,13 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EpisodeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.2672634">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4629156">
@@ -896,16 +888,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/authJWT.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.19181585">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7225064">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7966752">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7314578">
+          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
           <folding>
-            <marker date="1469754072352" expanded="true" signature="-1:-1" placeholder="{&quot;GET_DRAMAS&quot;: 'GET_DRAMAS'...}" />
+            <marker date="1469757727040" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469757727040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469757727040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469757727040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469757727040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469757727040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469757727040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469757727040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469757727040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469757727040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469757727040" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Episode.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35805628">
-          <caret line="24" column="58" selection-start-line="23" selection-start-column="8" selection-end-line="24" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.45012787">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="44" />
           <folding>
             <marker date="1469703388750" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1469703388750" expanded="true" signature="-1:-1" placeholder="{...}" />
@@ -919,121 +949,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/authJWT.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EpisodeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.19181585">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.15345268">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
           <folding>
-            <marker date="1469503993013" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1469503993013" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469503993013" expanded="true" signature="-1:-1" placeholder=" Handle an incoming request. ..." />
-            <marker date="1469503993013" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469503993013" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469503993013" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469503993013" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469503993013" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469503993013" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7225064">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder=" Bootstrap any application services. ..." />
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder=" Register any application services. ..." />
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469686211784" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7966752">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="17" />
-          <folding>
-            <marker date="1469408008415" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469408008415" expanded="true" signature="-1:-1" placeholder=" The application's global HTTP middleware stack. ..." />
-            <marker date="1469408008415" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408008415" expanded="true" signature="-1:-1" placeholder=" The application's route middleware groups. ..." />
-            <marker date="1469408008415" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408008415" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408008415" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469408008415" expanded="true" signature="-1:-1" placeholder=" The application's route middleware. ..." />
-            <marker date="1469408008415" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder=" User seen a drama ..." />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder=" User unseen the episode ..." />
+            <marker date="1469693908437" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Drama.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5370844">
-          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.471867">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
-            <marker date="1469755138955" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder=" Is Drama follow by given user ..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder=" The drama belongs to many users. ..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder=" The attributes that are mass assignable. ..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder=" The drama is updated ..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder=" Drama have many episodes ..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder=" Update Drama episode info. ..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469755138955" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469758466669" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder=" Is Drama follow by given user ..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder=" The drama belongs to many users. ..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder=" The attributes that are mass assignable. ..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder=" The drama is updated ..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder=" Drama have many episodes ..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder=" Update Drama episode info. ..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469758466669" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DramaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1048594">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <marker date="1469757710503" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder=" Get a drama detail and its episodes ..." />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder=" Get All Drama list ..." />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder=" User follow a drama ..." />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder=" User unfollow the drama ..." />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder=" User's drama ..." />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder=" Get All Shows ..." />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder=" @param $drama ..." />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469757710503" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5767263">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.65473145">
+          <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
           <folding />
         </state>
       </provider>
