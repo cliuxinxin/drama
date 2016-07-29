@@ -1,6 +1,6 @@
 import request from 'reqwest';
 import when from 'when';
-import {DRAMAS_URL, GET_DRAMAS_FOLLOWED_URL} from '../constants/DramaConstants';
+import {DRAMAS_URL, DRAMA_FOLLOW_URL, DRAMA_UNFOLLOW_URL} from '../constants/DramaConstants';
 import DramaAction from '../actions/DramaAction';
 
 class DramaService {
@@ -23,6 +23,26 @@ class DramaService {
 				return true;
 			})
 	}
+
+	dramaFollow(drama, jwt) {
+		return this.handleDramaFollow(when(request({
+			url: DRAMA_FOLLOW_URL + '/' + drama,
+			headers: (jwt !== undefined ? { 'Authorization': 'Bearer ' + jwt } : null),
+			method: 'GET',
+			type: 'json',
+			data: {}
+		})));
+	}
+
+	handleDramaFollow(dramaFollowPromise) {
+		return dramaFollowPromise
+			.then(function(response){
+				console.log(response);
+				return true;
+			})
+	}
+
+
 
 	getDramas2(page, jwt) {
 		var deferreds = [];

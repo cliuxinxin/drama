@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link, hashHistory } from 'react-router'
 import { Grid, Row, Col } from 'react-bootstrap'
-import ReactPaginate from 'react-paginate'
+import Pager from 'react-pager'
 import AuthenticatedComponent from '../Auth/AuthenticatedComponent'
 import Loading from '../Loading'
 import DramaStore from '../../stores/DramaStore'
@@ -27,15 +27,17 @@ class Dramas extends React.Component {
 	}
 
 	getDramas() {
-		// this.setState({loading: true});
-		if(!this.props.params.page || this.props.params.page === 'NaN'){
-			this.props.params.page = 1;
-		}
-		DramaService.getDramas(this.props.params.page, this.props.jwt);
+		this.setState({loading: true});
+		DramaService.getDramas(this.state.page, this.props.jwt);
 	}
 
 	_getDramasState() {
+		if(!this.props.params.page || this.props.params.page === 'NaN'){
+			this.props.params.page = 1;
+		}
 		return {
+			page: this.props.params.page,
+			visiblePages: 5,
 			loading: DramaStore.loading,
 			totalPages: DramaStore.totalPages,
 			dramas: DramaStore.dramas
@@ -47,13 +49,12 @@ class Dramas extends React.Component {
 	}
 
 	handlePageClick = (data) => {
-		let selected = data.selected;
+		let selected = data;
 		let requestPage = selected + 1;
 		
 		hashHistory.push('/dramas/' + requestPage);
 		this.setState({page: requestPage}, () => {
 			this.getDramas();
-			$('html,body').animate({scrollTop:0}, 0); 
 		});
 	};
 
@@ -75,18 +76,20 @@ class Dramas extends React.Component {
 					        })}
 						</Grid>
 						<Row>
-							<ReactPaginate previousLabel={"上一页"}
-		                       nextLabel={"下一页"}
-		                       breakLabel={<Link to="">...</Link>}
-		                       breakClassName={"break-me"}
-		                       pageNum={this.state.totalPages}
-		                       initialSelected={parseInt(this.props.params.page) - 1}
-		                       marginPagesDisplayed={2}
-		                       pageRangeDisplayed={5}
-		                       clickCallback={this.handlePageClick}
-		                       containerClassName={"pagination"}
-		                       subContainerClassName={"pages pagination"}
-		                       activeClassName={"active"} />
+							<Pager 
+								total =   {this.state.totalPages}
+								current = {this.state.page - 1}
+								titles = {{
+									first:   '首页',
+									prev:    '\u00AB',
+									prevSet: '...',
+									nextSet: '...',
+									next:    '\u00BB',
+									last:    '末页'
+								}}
+								visiblePages = {this.state.visiblePages}
+								onPageChanged={this.handlePageClick}
+							 />
 				        </Row>
 					</div>
 				)

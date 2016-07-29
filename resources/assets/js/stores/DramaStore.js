@@ -16,11 +16,8 @@ class DramaStore extends BaseStore {
 	    switch(action.actionType) {
 	      case GET_DRAMAS:
 	        this._dramas = action.dramas;
+	        this._loading = false;
 	        this._totalPages = action.totalPages;
-	        this.emitChange();
-	        break;
-	      case GET_DRAMAS_FOLLOW:
-	        this._followed = action.followed;
 	        this.emitChange();
 	        break;
 	      default:
