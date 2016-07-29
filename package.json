@@ -1,7 +1,8 @@
 {
   "private": true,
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0"
   },
   "dependencies": {
     "bootstrap": "^3.3.6",

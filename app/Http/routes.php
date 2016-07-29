@@ -34,9 +34,9 @@ Route::group(['prefix' => 'api'], function() {
 
     Route::group(['middleware' => 'jwt.auth'],function(){
         Route::get('drama/follow/{drama}','DramaController@follow');
-        Route::get('drama/unFollow/{drama}','DramaController@unFollow');
+        Route::get('drama/unfollow/{drama}','DramaController@unFollow');
         Route::get('episode/seen/{episode}','EpisodeController@seen');
-        Route::get('episode/unSeen/{episode}','EpisodeController@unSeen');
+        Route::get('episode/unseen/{episode}','EpisodeController@unSeen');
         Route::get('drama/followed','DramaController@userDramas');
     });
 

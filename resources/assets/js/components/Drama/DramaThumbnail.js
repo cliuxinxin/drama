@@ -11,8 +11,12 @@ class DramaThumbnail extends Component {
 				<h4>{this.props.drama.name}</h4>
 				<p dangerouslySetInnerHTML={{__html: this.props.drama.type}}></p>
 				<p>
-					<Button bsStyle="primary">
-						<i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;跟剧
+					<Button bsStyle={this.props.drama.user_follow ? "danger" : "primary"}>
+						{ this.props.drama.user_follow ? (
+							<i className="fa fa-heart" aria-hidden="true">&nbsp;已跟</i>
+						) : (
+							<i className="fa fa-heart-o" aria-hidden="true">&nbsp;跟剧</i>
+						)}
 					</Button>
 				</p>
 			</Thumbnail>

@@ -2,7 +2,7 @@ import {BASE_URL} from './BaseConstants'
 
 export default {
 	DRAMAS_URL: BASE_URL + '/api/drama',
-	GET_DRAMAS_FOLLOWED_URL: BASE_URL + '/api/drama',
+	GET_DRAMAS_FOLLOWED_URL: BASE_URL + '/api/drama/followed',
 	DRAMAS_FOLLOW_URL: '',
 	DRAMAS_UNFOLLOW_URL: '',
   	GET_DRAMAS: 'GET_DRAMAS',

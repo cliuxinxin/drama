@@ -28,10 +28,10 @@ class Dramas extends React.Component {
 
 	getDramas() {
 		// this.setState({loading: true});
-		if(!this.props.params.page){
+		if(!this.props.params.page || this.props.params.page === 'NaN'){
 			this.props.params.page = 1;
 		}
-		DramaService.getDramas(this.props.params.page);
+		DramaService.getDramas(this.props.params.page, this.props.jwt);
 	}
 
 	_getDramasState() {

@@ -23,7 +23,7 @@ class AuthStore extends BaseStore {
       case LOGOUT_USER:
         this._jwt = null;
         this._user = null;
-        this.uid = null;
+        this._uid = null;
         this.emitChange();
         break;
       default:
