@@ -2,14 +2,15 @@ import React, { Component } from 'react'
 import { Link, hashHistory } from 'react-router'
 import { Grid, Row, Col } from 'react-bootstrap'
 import ReactPaginate from 'react-paginate'
+import AuthenticatedComponent from '../Auth/AuthenticatedComponent'
 import Loading from '../Loading'
 import DramaStore from '../../stores/DramaStore'
 import DramaService from '../../services/DramaService'
-import DramaDividerThumbnail from './DramaDividerThumbnail'
+import DramaThumbnail from './DramaThumbnail'
 
-class Dramas extends Component {
-	constructor() {
-		super();
+class Dramas extends React.Component {
+	constructor(props) {
+		super(props);
 		this.state = this._getDramasState();
 		this._onChange = this._onChange.bind(this);
 	}
@@ -60,7 +61,7 @@ class Dramas extends Component {
 		if(this.state.loading){
 			return <Loading />
 		} else {
-			var dramas = this.state.dramas;
+			let dramas = this.state.dramas;
 			if(dramas && dramas !== null) {
 				return (
 					<div>
@@ -68,7 +69,7 @@ class Dramas extends Component {
 							{dramas.map(function(drama, index) {
 								return (
 									<Col xs={6} md={4} key={index}>			
-										<DramaDividerThumbnail key={index} drama={drama} />
+										<DramaThumbnail key={index} drama={drama} auth />
 									</Col>
 								)
 					        })}
@@ -98,4 +99,4 @@ class Dramas extends Component {
 	}
 }
 
-export default Dramas
+export default AuthenticatedComponent(Dramas)

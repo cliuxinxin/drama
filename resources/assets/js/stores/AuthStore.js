@@ -8,7 +8,8 @@ class AuthStore extends BaseStore {
     super();
     this.subscribe(() => this._registerToActions.bind(this))
     this._user = localStorage.getItem('user');
-    this._jwt = localStorage.getItem('jwt');;
+    this._jwt = localStorage.getItem('jwt');
+    this._uid = localStorage.getItem('uid');
   }
 
   _registerToActions(action) {
@@ -16,10 +17,13 @@ class AuthStore extends BaseStore {
       case LOGIN_USER:
         this._jwt = action.jwt;
         this._user = action.user;
+        this._uid = action.uid;
         this.emitChange();
         break;
       case LOGOUT_USER:
+        this._jwt = null;
         this._user = null;
+        this.uid = null;
         this.emitChange();
         break;
       default:
@@ -33,6 +37,10 @@ class AuthStore extends BaseStore {
 
   get jwt() {
     return this._jwt;
+  }
+
+  get uid() {
+    return this._uid;
   }
 
   isLoggedIn() {

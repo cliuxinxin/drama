@@ -37,7 +37,8 @@ class AuthService {
 			.then(function(response) {
 				let jwt = response.result;
 				let user = response.user.email;
-				AuthAction.loginUser(jwt, user);
+				let uid = response.user.id;
+				AuthAction.loginUser(jwt, user, uid);
 				return true;
 		});
 	}

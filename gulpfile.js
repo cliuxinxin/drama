@@ -1,3 +1,4 @@
+var gulp = require('gulp');
 var elixir = require('laravel-elixir');
 
 require('laravel-elixir-livereload');
@@ -9,3 +10,9 @@ elixir(function(mix) {
 		.browserify('app.js')
 		.livereload();
 });
+
+
+gulp.task('fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('public/fonts'))
+})
