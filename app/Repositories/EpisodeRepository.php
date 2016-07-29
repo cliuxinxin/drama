@@ -27,14 +27,20 @@ class EpisodeRepository
      */
     public function getUnAirEpisodes($dramaid)
     {
-        $collection = Drama::find($dramaid)->episodes;
+        return Drama::find($dramaid)->episodes()->unair()->get();
 
-        $episodes = $collection->filter(function ($item) {
-            return Carbon::now()->diffInDays(new Carbon($item->airdate),false)>=0;
-        });
 
-        return $episodes;
+    }
 
+    /**
+     * Get aired episodes by drama id
+     *
+     * @param $dramaid
+     * @return mixed
+     */
+    public function getAiredEpisodes($dramaid)
+    {
+        return Drama::find($dramaid)->episodes()->aired()->get();
     }
 
     /**
@@ -48,39 +54,12 @@ class EpisodeRepository
         $this->getEpisodesByShowid($showid);
     }
 
-    /**
-     * Get aired episodes by drama id
-     *
-     * @param $dramaid
-     * @return mixed
-     */
-    public function getAiredEpisodes($dramaid)
-    {
-        $collection = Drama::find($dramaid)->episodes;
-
-        $episodes = $collection->filter(function ($item) {
-            return Carbon::now()->diffInDays(new Carbon($item->airdate),false)<0;
-        });
-
-        return $episodes;
-
-    }
-    /**
-     * Get Episode by drama id.
-     *
-     * @param $dramaid
-     * @return mixed
-     */
-    public function getDramaEpiodes($dramaid)
-    {
-        return Drama::find($dramaid)->episodes;
-    }
-
 
     /**
      * Get episodes info from api by drama id.
-     * @param $id
+     * @param $tvmazeid
      * @return mixed
+     * @internal param $id
      */
     public function getEpisodesByShowid($tvmazeid)
     {

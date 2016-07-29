@@ -10,8 +10,46 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 class Drama extends Model
 {
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name', 'url', 'imgurl','cnname','status','airedfrom','type','imdb','summary','tvmazeid',
+        'episode_update_date', 'newest_season', 'newest_number', 'newest_date','next_season', 'next_number',
+        'next_date'
+    ];
+
     protected $appends = array('user_follow');
 
+    /**
+     * The drama belongs to many users.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function users()
+    {
+        return $this->belongsToMany('App\User');
+
+    }
+
+    /**
+     * Drama have many episodes
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function episodes()
+    {
+        return $this->hasMany('App\Episode','tvmazeid','tvmazeid');
+    }
+
+
+    /**
+     * get user_follow attribute
+     *
+     * @return bool
+     */
     public function getUserFollowAttribute()
     {
         if ($token = JWTAuth::getToken()) {
@@ -42,26 +80,8 @@ class Drama extends Model
         return false;
     }
 
-    /**
-     * The drama belongs to many users.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
-    public function users()
-    {
-        return $this->belongsToMany('App\User');
 
-    }
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'url', 'imgurl','cnname','status','airedfrom','type','imdb','summary','tvmazeid',
-        'episode_update_date', 'newest_season', 'newest_number', 'newest_date','next_season', 'next_number',
-        'next_date'
-    ];
+
 
     /**
      * The drama is updated
@@ -81,15 +101,7 @@ class Drama extends Model
 
 
 
-    /**
-     * Drama have many episodes
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function episodes()
-    {
-        return $this->hasMany('App\Episode','tvmazeid','tvmazeid');
-    }
+
 
 
     /**

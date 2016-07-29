@@ -14,11 +14,31 @@ class Episode extends Model
 
     protected $appends = array('user_seen');
 
-    public function scopeTest($query,$tvmazeid)
+    /**
+     * Aired episodes
+     * @param $query
+     * @return mixed
+     */
+    public function scopeAired($query)
     {
-        return $query->where('tvmazeid' ,'=', $tvmazeid);
+        return $query->where('airdate','<=',Carbon::now());
     }
 
+    /**
+     * Unair episodes
+     * @param $query
+     * @return mixed
+     */
+    public function scopeUnair($query)
+    {
+        return $query->where('airdate','>',Carbon::now());
+    }
+
+    /**
+     * Get user seen attribute
+     *
+     * @return bool
+     */
     public function getUserSeenAttribute()
     {
         if ($token = JWTAuth::getToken()) {

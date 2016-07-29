@@ -48,10 +48,6 @@ class DramaController extends Controller
     {
         $dramas = Drama::paginate(9);
 
-//        foreach($dramas as $drama){
-//            $drama->episodeUpdate();
-//        }
-
         return $dramas;
     }
 
@@ -115,7 +111,7 @@ class DramaController extends Controller
     public function test()
     {
 
-        $episodes = Episode::test(118)->get();
+        $episodes = Drama::find(26)->episodes()->aired()->get();
 
         return $episodes;
     }
