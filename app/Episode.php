@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
@@ -12,6 +13,11 @@ class Episode extends Model
     ];
 
     protected $appends = array('user_seen');
+
+    public function scopeTest($query,$tvmazeid)
+    {
+        return $query->where('tvmazeid' ,'=', $tvmazeid);
+    }
 
     public function getUserSeenAttribute()
     {

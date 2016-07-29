@@ -13,6 +13,12 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 class DramaController extends Controller
 {
 
+    /**
+     * Get a drama detail and its episodes
+     *
+     * @param $dramaid
+     * @return array
+     */
     public function show($dramaid)
     {
 
@@ -37,9 +43,9 @@ class DramaController extends Controller
     {
         $dramas = Drama::paginate(9);
 
-        foreach($dramas as $drama){
-            $drama->episodeUpdate();
-        }
+//        foreach($dramas as $drama){
+//            $drama->episodeUpdate();
+//        }
 
         return $dramas;
     }
@@ -103,12 +109,10 @@ class DramaController extends Controller
 
     public function test()
     {
-        $dramas = new EpisodeRepository();
 
-        $dramaepisodes = $dramas->getAiredEpisodes(118);
+        $episodes = Episode::test(118)->get();
 
-
-        return $dramaepisodes;
+        return $episodes;
     }
 
     /**

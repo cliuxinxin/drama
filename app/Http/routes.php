@@ -29,10 +29,10 @@ Route::group(['prefix' => 'api'], function() {
     });
 
     //Drama
+    Route::get('drama/get','DramaController@get');
     Route::get('drama','DramaController@index');
     Route::get('drama/{dramaid}','DramaController@show');
-    Route::get('test','DramaController@test');
-    Route::get('drama/get','DramaController@get');
+
     Route::group(['middleware' => 'jwt.auth'],function(){
         Route::get('drama/follow/{drama}','DramaController@follow');
         Route::get('drama/unFollow/{drama}','DramaController@unFollow');
@@ -40,6 +40,9 @@ Route::group(['prefix' => 'api'], function() {
         Route::get('episode/unSeen/{episode}','EpisodeController@unSeen');
         Route::get('drama/followed','DramaController@userDramas');
     });
+
+    Route::get('test','DramaController@test');
+
 
 
 });

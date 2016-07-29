@@ -8,6 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Drama extends Model
 {
+
+    /**
+     * Is Drama follow by given user
+     *
+     * @param $user
+     * @return bool
+     */
     public function isFollowBy($user)
     {
         if(!$user->dramas->first()){
