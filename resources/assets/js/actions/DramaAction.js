@@ -1,6 +1,6 @@
 import { hashHistory } from 'react-router'
 import AppDispatcher from '../dispatchers/AppDispatcher.js';
-import { GET_DRAMAS, GET_DRAMAS_FOLLOW } from '../constants/AuthConstants.js';
+import { GET_DRAMAS, SET_DRAMA_FOLLOWED } from '../constants/AuthConstants.js';
 
 export default {
   getDramas: (dramas, totalPages) => {
@@ -11,9 +11,9 @@ export default {
     });
   },
 
-  getDramaFollowed: (followed) => {
+  setDramaFollowed: (followed) => {
   	AppDispatcher.dispatch({
-      actionType: GET_DRAMAS_FOLLOW,
+      actionType: SET_DRAMA_FOLLOWED,
       followed: followed
     });
   }

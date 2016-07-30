@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Thumbnail, Button } from 'react-bootstrap'
-import AuthenticatedComponent from '../auth/AuthenticatedComponent'
+import AuthenticatedComponent from '../Auth/AuthenticatedComponent'
 import DramaStore from '../../stores/DramaStore'
 import DramaService from '../../services/DramaService'
 
@@ -10,7 +10,6 @@ class DramaThumbnail extends Component {
 		this.state = this._getDramaFollowState();
 		this._onChange = this._onChange.bind(this);
 		this.handleDramaFollow = this.handleDramaFollow.bind(this);
-		this.handleDramaUnFollow = this.handleDramaUnFollow.bind(this);
 	}
 
 	componentDidMount() {
@@ -33,11 +32,7 @@ class DramaThumbnail extends Component {
 	}
 
 	handleDramaFollow() {
-		DramaService.dramaFollow(this.props.drama, this.props.jwt);
-	}
-
-	handleDramaUnFollow() {
-		DramaService.dramaUnFollow(this.props.drama);
+		DramaService.dramaFollow(this.props.drama.id, this.state.followed, this.props.jwt);
 	}
 
 	render() {
@@ -48,7 +43,7 @@ class DramaThumbnail extends Component {
 				<p>
 					<Button 
 						bsStyle = {this.state.followed ? "danger" : "primary"}
-						onClick = {this.state.followed ? this.handleDramaUnFollow : this.handleDramaFollow}
+						onClick = {this.handleDramaFollow}
 					>
 						{ this.props.drama.user_follow ? (
 							<i className="fa fa-heart" aria-hidden="true">&nbsp;已跟</i>

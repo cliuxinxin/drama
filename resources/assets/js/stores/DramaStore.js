@@ -1,6 +1,6 @@
 import BaseStore from './BaseStore';
 import jwt_decode from 'jwt-decode';
-import { GET_DRAMAS, GET_DRAMAS_FOLLOW } from '../constants/AuthConstants.js';
+import { GET_DRAMAS, SET_DRAMA_FOLLOWED } from '../constants/AuthConstants.js';
 
 class DramaStore extends BaseStore {
 	constructor() {
@@ -18,6 +18,11 @@ class DramaStore extends BaseStore {
 	        this._dramas = action.dramas;
 	        this._loading = false;
 	        this._totalPages = action.totalPages;
+	        this.emitChange();
+	        break;
+	      case SET_DRAMA_FOLLOWED:
+	        this._followed = action.followed;
+	        this._loading = false;
 	        this.emitChange();
 	        break;
 	      default:

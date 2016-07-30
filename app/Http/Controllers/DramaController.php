@@ -67,14 +67,14 @@ class DramaController extends Controller
 
         $user->dramas()->sync([$drama], false);
 
-        return 'ok';
+        return 'followed';
     }
 
     /**
      * User unfollow the drama
      *
      * @param $drama
-     * @return string
+     * @return Boolean
      */
     public function unFollow($drama)
     {
@@ -82,7 +82,7 @@ class DramaController extends Controller
 
         $user->dramas()->detach($drama);
 
-        return 'ok';
+        return 'unfollowed';
     }
 
 
@@ -109,7 +109,7 @@ class DramaController extends Controller
 
         $dramas->getAll();
 
-        return 'OK';
+        return 'ok';
     }
 
     public function test()

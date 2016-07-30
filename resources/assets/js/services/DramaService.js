@@ -24,20 +24,41 @@ class DramaService {
 			})
 	}
 
-	dramaFollow(drama, jwt) {
-		return this.handleDramaFollow(when(request({
-			url: DRAMA_FOLLOW_URL + '/' + drama,
+	dramaFollow(drama, followed, jwt) {
+		// return this.handleDramaFollow(when(request({
+		// 	url: (followed ? DRAMA_UNFOLLOW_URL : DRAMA_FOLLOW_URL) + '/' + drama,
+		// 	headers: (jwt !== undefined ? { 'Authorization': 'Bearer ' + jwt } : null),
+		// 	method: 'GET',
+		// 	type: 'json',
+		// 	data: {}
+		// })));
+
+		$.ajax({
+			url: (followed ? DRAMA_UNFOLLOW_URL : DRAMA_FOLLOW_URL) + '/' + drama,
 			headers: (jwt !== undefined ? { 'Authorization': 'Bearer ' + jwt } : null),
 			method: 'GET',
 			type: 'json',
-			data: {}
-		})));
+			success: function(response) {
+				console.log(response);
+				if(response){
+					let followed = response;
+					console.log(followed);
+					if(followed === 'followed'){
+						DramaAction.setDramaFollowed(true);
+					} else if(followed === 'unfollowed') {
+						DramaAction.setDramaFollowed(false);
+					}
+				}
+			}
+		});
+
+		return true;
 	}
 
 	handleDramaFollow(dramaFollowPromise) {
 		return dramaFollowPromise
 			.then(function(response){
-				console.log(response);
+				
 				return true;
 			})
 	}
