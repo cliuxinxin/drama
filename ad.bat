@@ -1,7 +1,7 @@
 @echo off
 echo begin to deploy form github.
 git pull
-composer install
-npm install
 php artisan migrate
+call npm install
+call composer install
 echo deploy complete.
