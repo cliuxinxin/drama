@@ -48,6 +48,10 @@ class DramaController extends Controller
     {
         $dramas = Drama::paginate(9);
 
+//        foreach($dramas as $drama){
+//            $drama->episodeUpdate();
+//        }
+
         return $dramas;
     }
 

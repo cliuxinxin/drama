@@ -16,12 +16,14 @@ This is using an older version of [Elixir](https://laravel.com/docs/5.2/elixir),
 #完成列表
 1、用户后台</br>
 2、剧集信息抓取</br>
-3、剧集展示</br>
+3、剧集详细信息带剧集详细</br>
+4、用户关注剧集和用户看过剧集</br>
+5、用户剧集</br>
+6、剧集模块逻辑，返回剧集详情的时候，返回更新到第几季第几集，马上要放第几季第几集。</br>
+
 
 #TODO
-1、用户模块</br>
-2、剧集模块</br>
-3、剧集模块逻辑，返回更新到第几季第几机了，马上要放第几集，哪天放</br>
+NOthing.......
 
 #更新注意
 1、php artisan jwt:generate</br>
