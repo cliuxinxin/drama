@@ -1,6 +1,6 @@
 import { hashHistory } from 'react-router'
 import AppDispatcher from '../dispatchers/AppDispatcher.js';
-import { GET_DRAMAS, SET_DRAMA_FOLLOWED } from '../constants/AuthConstants.js';
+import { GET_DRAMAS, SET_DRAMA_FOLLOWED } from '../constants/DramaConstants.js';
 
 export default {
   getDramas: (dramas, totalPages) => {

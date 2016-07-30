@@ -1,6 +1,6 @@
 import BaseStore from './BaseStore';
 import jwt_decode from 'jwt-decode';
-import { GET_DRAMAS, SET_DRAMA_FOLLOWED } from '../constants/AuthConstants.js';
+import { GET_DRAMAS, SET_DRAMA_FOLLOWED } from '../constants/DramaConstants.js';
 
 class DramaStore extends BaseStore {
 	constructor() {
@@ -22,7 +22,6 @@ class DramaStore extends BaseStore {
 	        break;
 	      case SET_DRAMA_FOLLOWED:
 	        this._followed = action.followed;
-	        this._loading = false;
 	        this.emitChange();
 	        break;
 	      default:

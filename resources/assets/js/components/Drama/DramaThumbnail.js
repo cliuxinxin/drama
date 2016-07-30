@@ -13,7 +13,6 @@ class DramaThumbnail extends Component {
 	}
 
 	componentDidMount() {
-		DramaStore.addChangeListener(this._onChange);
 		this.setState({followed: this.props.drama.user_follow})
 	}
 
@@ -29,15 +28,17 @@ class DramaThumbnail extends Component {
 
 	_onChange() {
 		this.setState(this._getDramaFollowState());
+		DramaStore.removeChangeListener(this._onChange);
 	}
 
 	handleDramaFollow() {
+		DramaStore.addChangeListener(this._onChange);
 		DramaService.dramaFollow(this.props.drama.id, this.state.followed, this.props.jwt);
 	}
 
 	render() {
 		return (
-			<Thumbnail src={this.props.drama.imgurl} alt="242x200">
+			<Thumbnail key={this.props.drama.id} src={this.props.drama.imgurl} alt="242x200">
 				<h4>{this.props.drama.name}</h4>
 				<p dangerouslySetInnerHTML={{__html: this.props.drama.type}}></p>
 				<p>
@@ -45,7 +46,7 @@ class DramaThumbnail extends Component {
 						bsStyle = {this.state.followed ? "danger" : "primary"}
 						onClick = {this.handleDramaFollow}
 					>
-						{ this.props.drama.user_follow ? (
+						{ this.state.followed ? (
 							<i className="fa fa-heart" aria-hidden="true">&nbsp;已跟</i>
 						) : (
 							<i className="fa fa-heart-o" aria-hidden="true">&nbsp;跟剧</i>

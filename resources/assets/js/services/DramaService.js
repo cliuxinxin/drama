@@ -25,40 +25,27 @@ class DramaService {
 	}
 
 	dramaFollow(drama, followed, jwt) {
-		// return this.handleDramaFollow(when(request({
-		// 	url: (followed ? DRAMA_UNFOLLOW_URL : DRAMA_FOLLOW_URL) + '/' + drama,
-		// 	headers: (jwt !== undefined ? { 'Authorization': 'Bearer ' + jwt } : null),
-		// 	method: 'GET',
-		// 	type: 'json',
-		// 	data: {}
-		// })));
-
-		$.ajax({
+		return this.handleDramaFollow(when(request({
 			url: (followed ? DRAMA_UNFOLLOW_URL : DRAMA_FOLLOW_URL) + '/' + drama,
 			headers: (jwt !== undefined ? { 'Authorization': 'Bearer ' + jwt } : null),
 			method: 'GET',
-			type: 'json',
-			success: function(response) {
-				console.log(response);
+			type: 'string',
+			data: {}
+		})));
+	}
+
+	handleDramaFollow(dramaFollowPromise) {
+		return dramaFollowPromise
+			.then(function(response){
+				console.log(response.responseText);
 				if(response){
-					let followed = response;
-					console.log(followed);
+					let followed = response.responseText;
 					if(followed === 'followed'){
 						DramaAction.setDramaFollowed(true);
 					} else if(followed === 'unfollowed') {
 						DramaAction.setDramaFollowed(false);
 					}
 				}
-			}
-		});
-
-		return true;
-	}
-
-	handleDramaFollow(dramaFollowPromise) {
-		return dramaFollowPromise
-			.then(function(response){
-				
 				return true;
 			})
 	}
