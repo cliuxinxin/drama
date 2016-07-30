@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58293af8-6c5e-454e-b540-6ea15d5fad04" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ag.bat" afterPath="$PROJECT_DIR$/ag.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ad.bat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="drama.iws" />
@@ -32,8 +32,8 @@
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.35074627">
-                <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+              <first_editor vertical-scroll-proportion="0.3816631">
+                <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -83,6 +83,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/DramaController.php" />
         <option value="$PROJECT_DIR$/git.bat" />
         <option value="$PROJECT_DIR$/ag.bat" />
+        <option value="$PROJECT_DIR$/ad.bat" />
         <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
@@ -593,30 +594,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Repositories/EpisodeRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-          <folding>
-            <marker date="1469799135363" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1469799135363" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder=" Get unaired episodes by drama id ..." />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder=" Get aired episodes by drama id ..." />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder=" Get episodes by drama id ..." />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder=" Get episodes info from api by drama id. ..." />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder=" Get TVmaze info by api ..." />
-            <marker date="1469799135363" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5383632">
@@ -1017,6 +994,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ad.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18049793">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6309963">
@@ -1026,8 +1011,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.35074627">
-            <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <first_editor vertical-scroll-proportion="0.3816631">
+            <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
             <folding />
           </first_editor>
           <second_editor />
