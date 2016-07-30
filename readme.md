@@ -20,6 +20,7 @@ This is using an older version of [Elixir](https://laravel.com/docs/5.2/elixir),
 4、用户关注剧集和用户看过剧集</br>
 5、用户剧集</br>
 6、剧集模块逻辑，返回剧集详情的时候，返回更新到第几季第几集，马上要放第几季第几集。</br>
+7、增加windows批处理文件ag(auto git)</br>
 
 
 #TODO
