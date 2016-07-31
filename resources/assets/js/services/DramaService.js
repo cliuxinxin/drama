@@ -37,7 +37,6 @@ class DramaService {
 	handleDramaFollow(dramaFollowPromise) {
 		return dramaFollowPromise
 			.then(function(response){
-				console.log(response.responseText);
 				if(response){
 					let followed = response.responseText;
 					if(followed === 'followed'){

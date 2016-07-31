@@ -10,6 +10,7 @@ class AuthStore extends BaseStore {
     this._user = localStorage.getItem('user');
     this._jwt = localStorage.getItem('jwt');
     this._uid = localStorage.getItem('uid');
+    this._timestamp = localStorage.getItem('timestamp');
   }
 
   _registerToActions(action) {
@@ -18,12 +19,14 @@ class AuthStore extends BaseStore {
         this._jwt = action.jwt;
         this._user = action.user;
         this._uid = action.uid;
+        this._timestamp = action.timestamp;
         this.emitChange();
         break;
       case LOGOUT_USER:
         this._jwt = null;
         this._user = null;
         this._uid = null;
+        this._timestamp = null;
         this.emitChange();
         break;
       default:
@@ -44,7 +47,20 @@ class AuthStore extends BaseStore {
   }
 
   isLoggedIn() {
-    return !!this._user;
+    if(this._jwt){
+      let currentTimestamp = Math.round(new Date().getTime()/1000);
+      if(currentTimestamp - this._timestamp > 3600) {
+        this._registerToActions({
+          actionType: LOGOUT_USER
+        });
+        alert("登陆信息已过期，请重新登陆");
+        return false;
+      } else {
+        return true;
+      }
+    } else {
+      return false;
+    }
   }
 }
 
