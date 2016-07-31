@@ -1,6 +1,7 @@
 import {LOGIN_USER, LOGOUT_USER} from '../constants/AuthConstants';
 import BaseStore from './BaseStore';
 import jwt_decode from 'jwt-decode';
+import AuthService from '../services/AuthService'
 
 class AuthStore extends BaseStore {
 
@@ -50,9 +51,7 @@ class AuthStore extends BaseStore {
     if(this._jwt){
       let currentTimestamp = Math.round(new Date().getTime()/1000);
       if(currentTimestamp - this._timestamp > 3600) {
-        this._registerToActions({
-          actionType: LOGOUT_USER
-        });
+        AuthService.logout();
         alert("登陆信息已过期，请重新登陆");
         return false;
       } else {
